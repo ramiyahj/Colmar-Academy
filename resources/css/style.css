@@ -41,13 +41,14 @@ header {
   align-items: center;
   justify-content: flex-end;
   width: 50%;
+  padding-left: 24px;
 }
 
 .nav span {
   padding-right: 16px;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 24px;
+
 }
 
 .block {
@@ -70,6 +71,23 @@ header {
    display: flex;
    flex-direction: column;
    height: 100%;
-   align-items: center;
+   width: 30%;
+   align-items: left;
    justify-content: center;
  }
+
+.motto h2 {
+  font-size: 2.5rem;
+}
+
+.motto p {
+  font-size: 1.5rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.motto button {
+  background-color: darkgray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
