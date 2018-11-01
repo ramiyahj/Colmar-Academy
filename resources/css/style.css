@@ -97,12 +97,18 @@ header {
 
  /* Main Content */
 
+.main {
+  display: flex;
+  width: 1040px;
+}
+
 .main-block {
-  width: 100%;
+  min-width: 60%;
 }
 
 .main-block img {
-  width: 60%;
+  flex-shrink: 0;
+  width: 624px;
   height: auto;
   padding: 32px 24px;
 }
