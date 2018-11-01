@@ -7,6 +7,7 @@ html {
 
 body {
   width: 1040px;
+  margin: 0 auto;
 }
 /* Header */
 
@@ -75,7 +76,6 @@ header {
    flex-direction: column;
    height: 100%;
    width: 30%;
-   align-items: ;
    justify-content: center;
  }
 
@@ -99,27 +99,56 @@ header {
 
 .main {
   display: flex;
-  width: 1040px;
+  width: 100%;
 }
 
 .main-block {
-  min-width: 60%;
+  width: 60%;
 }
 
 .main-block img {
   flex-shrink: 0;
   width: 624px;
   height: auto;
-  padding: 32px 24px;
+  margin: 32px 24px;
 }
 
 .main-block h2 {
   font-size: 1.5rem;
-  width: 60%;
+  width: 100%;
   padding-left: 24px;
+  padding-bottom: 24px;
 }
 
 .main-block p {
-  width: 60%;
+  width: 100%;
   padding-left: 24px;
+}
+
+.information {
+  width: 40%;
+  margin-left: 24px;
+  padding-top: 16px;
+  border-left: 1px solid lightgray;
+}
+
+.info {
+  display: flex;
+  padding: 16px 16px;
+}
+
+.info img {
+  width: 35%;
+  height: auto;
+  align-self: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  width: 65%;
+  padding-left: 16px;
 }
