@@ -99,6 +99,7 @@ header {
 .main {
   display: flex;
   width: 100%;
+
 }
 
 .main span {
@@ -106,43 +107,49 @@ header {
 }
 
 .main-block {
-  width: 100%;
+  width: 60%;
   height: auto;
-  border-right: 1px solid lightgray;
+  flex-shrink: 0;
+  padding: 32px 24px;
+  border-right: 1px solid gray;
 }
 
 .main-block img {
-  width: 60%;
+  width: 100%;
   height: auto;
-  margin: 32px 24px;
+
 }
 
 .main-block h2 {
   font-size: 1.5rem;
   width: auto;
-  padding-left: 24px;
   padding-bottom: 24px;
 }
 
 .main-block p {
   width: auto;
-  padding-left: 24px;
+
 }
 
+/* Sidebar */
+
 .information {
+
   width: 40%;
   padding-top: 16px;
 
 }
 
 .info {
+  width: 100%;
   display: flex;
-  padding: 16px 16px;
+  border-bottom: 1px solid gray;
 }
 
 .info img {
   width: 35%;
   height: auto;
+  padding: 16px 16px;
   align-self: center;
 }
 
@@ -153,5 +160,15 @@ header {
   align-content: center;
   height: auto;
   width: 65%;
-  padding-left: 16px;
 }
+
+.text h6 {
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+}
+
+.text p {
+  padding-bottom: 8px;
+}
+
+/* Secondary Content */
