@@ -123,6 +123,7 @@ header {
 .main-block h2 {
   font-size: 1.5rem;
   width: auto;
+  padding-top: 32px;
   padding-bottom: 24px;
 }
 
@@ -165,6 +166,7 @@ header {
 .text h6 {
   font-size: 1.5rem;
   padding-bottom: 8px;
+
 }
 
 .text p {
@@ -172,3 +174,36 @@ header {
 }
 
 /* Secondary Content */
+
+.sec-content {
+  width: 100%;
+  background-color: lightgray;
+
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 72px auto 32px auto 32px auto 72px;
+  grid-template-rows: auto 16px 8px 8px 32px auto 16px 8px 8px 32px;
+}
+
+.sengineering {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.compart {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.design {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
