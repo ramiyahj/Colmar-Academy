@@ -178,7 +178,13 @@ header {
 .sec-content {
   width: 100%;
   background-color: lightgray;
+}
 
+.sec-content h3 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-align: center;
+  font-size: 1.5rem;
 }
 
 .grid {
