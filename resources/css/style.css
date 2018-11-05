@@ -99,7 +99,6 @@ header {
 .main {
   display: flex;
   width: 100%;
-
 }
 
 .main span {
@@ -134,11 +133,9 @@ header {
 
 /* Sidebar */
 
-.information {
-
+.sidebar {
   width: 40%;
   padding-top: 16px;
-
 }
 
 .info {
@@ -182,34 +179,61 @@ header {
 
 .sec-content h3 {
   padding-top: 32px;
-  padding-bottom: 32px;
   text-align: center;
   font-size: 1.5rem;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: 72px auto 32px auto 32px auto 72px;
-  grid-template-rows: auto 16px 8px 8px 32px auto 16px 8px 8px 32px;
+  display: inline-flex;
+  justify-content: center;
+  padding: 32px 72px;
+  flex-wrap: wrap;
 }
 
-.sengineering {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 5;
+.class {
+  background-color: white;
+  width: 350px;
+  flex-wrap: wrap;
+  margin-right: 32px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
 }
 
-.compart {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 5;
+.class img {
+  width: 350px;
+  height: auto;
 }
 
-.design {
-  grid-column-start: 6;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 5;
+.class h6 {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.class p {
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+
+/* Tertiary Content */
+
+.ter-content {
+  width: 100%;
+}
+
+.ter-content h4 {
+  padding-top: 32px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.ter-contentblock {
+  display: flex;
+  width: 100%;
+}
+
+.video {
+  width: 60%;
+  margin: 32px 24px 24px 24px;
 }
