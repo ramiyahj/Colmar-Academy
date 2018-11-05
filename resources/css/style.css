@@ -235,5 +235,22 @@ header {
 
 .video {
   width: 60%;
-  margin: 32px 24px 24px 24px;
+  margin: 32px 24px;
+}
+
+.video h6 {
+  font-size: 1.5rem;
+  padding-top: 24px;
+}
+
+.video p {
+  padding-top: 8px;
+}
+
+/* Footer */
+
+#footer {
+  border-top: 1px solid lightgray;
+  padding-left: 24px;
+  padding-top: 16px;
 }
