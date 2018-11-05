@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
 }
 /* Header */
@@ -21,6 +21,30 @@ header {
   color: gray;
   height: 64px;
   margin: 0 auto;
+}
+
+.icon {
+  display: none;
+}
+
+@media only screen and (max-width:500px) {
+  .icon {
+    display: block;
+  }
+
+  .text, .logo {
+    display: none;
+  }
+
+  .block {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .block img {
+    width: 100%;
+  }
 }
 
 .logo {
@@ -42,7 +66,7 @@ header {
   font-size: 1rem;
   align-items: center;
   justify-content: flex-end;
-  width: 50%;
+  width: 40%;
   padding-left: 24px;
 }
 
