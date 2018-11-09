@@ -27,26 +27,6 @@ header {
   display: none;
 }
 
-@media only screen and (max-width:500px) {
-  .icon {
-    display: block;
-  }
-
-  .text, .logo {
-    display: none;
-  }
-
-  .block {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .block img {
-    width: 100%;
-  }
-}
-
 .logo {
   display: inline-flex;
   font-family: Helvetica;
@@ -277,4 +257,70 @@ header {
   border-top: 1px solid lightgray;
   padding-left: 24px;
   padding-top: 16px;
+}
+
+@media only screen and (max-width:500px) {
+  .icon {
+    display: block;
+  }
+
+  .headtext, .logo {
+    display: none;
+  }
+
+.block {
+  max-width: 500px;
+}
+
+.blocks {
+  padding-bottom: 32px;
+}
+
+  .blocks img {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 32px;
+  }
+
+  .motto {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-left: 16px;
+  }
+
+  .motto h2 {
+    padding-bottom: 32px;
+  }
+
+  .motto h3 {
+    padding-bottom: 24px;
+  }
+
+  .motto button {
+    width: 100%;
+    padding-right: 16px;
+  }
+
+  .main-block {
+    display: none;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 0;
+  }
+
+  .info {
+    display: unset;
+    width: 100%;
+    border: none;
+
+  }
+
+  .info img {
+    height: auto;
+    width: 100%;
+    padding: 16px;
+  }
 }
