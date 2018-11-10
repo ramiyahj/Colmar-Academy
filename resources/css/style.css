@@ -155,6 +155,10 @@ header {
   align-self: center;
 }
 
+.mobile {
+  display: none;
+}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -259,21 +263,27 @@ header {
   padding-top: 16px;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
+/* Header */
+
   .icon {
     display: block;
   }
+
+.nav {
+  width: 100%;
+  justify-content: space-between;
+  padding: 0%;
+  margin: 0%;
+}
 
   .headtext, .logo {
     display: none;
   }
 
-.block {
-  max-width: 500px;
-}
+  .blocks {
+    padding-bottom: 32px;
 
-.blocks {
-  padding-bottom: 32px;
 }
 
   .blocks img {
@@ -286,41 +296,116 @@ header {
     display: block;
     width: 100%;
     height: auto;
-    padding-left: 16px;
+
   }
 
   .motto h2 {
     padding-bottom: 32px;
+    padding-left: 16px;
   }
 
   .motto h3 {
     padding-bottom: 24px;
+    padding-left: 16px;
   }
 
   .motto button {
-    width: 100%;
-    padding-right: 16px;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
   }
+
+/* Main Content */
 
   .main-block {
     display: none;
+    padding: 0;
   }
 
   .sidebar {
     width: 100%;
     padding: 0;
+    margin: 0;
   }
 
   .info {
     display: unset;
-    width: 100%;
+    width: 90%;
+    height: auto;
     border: none;
+    padding: 0;
 
   }
 
   .info img {
-    height: auto;
-    width: 100%;
+    display: none;
+  }
+
+  .mobile img {
+    display: block;
     padding: 16px;
+  }
+
+  .text {
+    width: 90%;
+    margin-left: 16px;
+  }
+
+/* Secondary Content */
+
+  .sec-content {
+    background-color: white;
+  }
+
+  .grid {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    padding: 0%;
+}
+
+  .class {
+    width: 100%;
+    background-color: lightgray;
+    margin-bottom: 8px;
+    padding: 0%;
+  }
+
+  .class h6 {
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+
+  .class img, .class p {
+    display: none;
+  }
+
+/* Tertiaty Content */
+
+  .ter-content {
+    margin-bottom: 24px;
+  }
+  .ter-content h4 {
+    padding-bottom: 16px;
+}
+
+  .ter-contentblock .sidebar{
+    display: none;
+  }
+
+  .video {
+    margin: 0;
+    width: 100%;
+  }
+
+  .video h6, .video p {
+    display: none;
+  }
+
+/* Footer */
+
+  #footer p {
+    display: none;
   }
 }
